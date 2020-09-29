@@ -277,12 +277,9 @@ body {
 }
 @media (min-width: 1120px) {
   .menu__list {
-    flex-wrap: wrap;
+	 flex-wrap: wrap;
     overflow: hidden;
     padding-left: 32px;
-  }
-  .menu.list:last-child {
-    align-self: 0;
   }
 }
 li {
@@ -300,7 +297,6 @@ li {
 .menu__link--border {
   border: 2px solid #b8ffec;
   margin: 0 0 0 0;
-
   padding: 8px 16px;
   border-radius: 6px;
   background: #ffffff;
