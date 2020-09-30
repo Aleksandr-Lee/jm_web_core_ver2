@@ -284,16 +284,9 @@ body {
 }
 li {
   list-style-type: none;
-  margin: 12px 30px 0 0;
+  padding: 8px 16px;
 }
-/*li:first-child {
-	padding: 8px 16px;
-}*/
-@media (min-width: 1120px){
-li:last-child {
-  padding: 15px 16px;
-}
-}
+
 .menu__link {
   font-family: "TT Lakes Medium";
   font-size: 16px;
@@ -302,9 +295,8 @@ li:last-child {
   text-decoration: none;
   white-space: nowrap;
 }
-.menu__link--border {
+.menu__link--border:hover {
   border: 2px solid #b8ffec;
-  padding: 8px 16px;
   border-radius: 6px;
   background: #ffffff;
 }
