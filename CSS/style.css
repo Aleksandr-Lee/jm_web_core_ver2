@@ -30,6 +30,7 @@
 }
 
 html {
+  margin: 0 auto;
   max-width: 320px;
   box-sizing: border-box;
 }
@@ -267,7 +268,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   overflow: scroll;
-  min-height: 40px;
   padding-left: 16px;
 }
 @media (min-width: 768px) {
@@ -283,10 +283,13 @@ body {
   }
 }
 li {
+  border: 2px solid transparent;
   list-style-type: none;
   padding: 8px 16px;
 }
-
+li:hover {
+  border: 2px solid #41f6d7;
+}
 .menu__link {
   font-family: "TT Lakes Medium";
   font-size: 16px;
@@ -388,6 +391,6 @@ li {
   .picture__img {
     height: 307px;
     width: 531px;
-    margin:0 28px 49px 0;
+    margin: 0 28px 49px 0;
   }
 }
