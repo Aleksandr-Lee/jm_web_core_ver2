@@ -91,7 +91,7 @@ body {
   transition: 0.5s;
 }
 .button__close {
-  background-image: url(images/header/menu/close.svg);
+  background-image: url(/images/header/menu/close.svg);
 }
 .logo {
   margin: 0 60px 0 17px;
@@ -103,7 +103,7 @@ body {
 .logo__image {
 }
 .button__search {
-  background-image: url(images/header/menu/search.svg);
+  background-image: url(/images/header/menu/search.svg);
 }
 .flex {
   display: flex;
@@ -166,15 +166,15 @@ body {
   display: flex;
 }
 .button__tel {
-  background-image: url(images/header/menu/tel.svg);
+  background-image: url(/images/header/menu/tel.svg);
   margin: 0 16px 16px 0;
 }
 .button__message {
-  background-image: url(images/header/menu/message.svg);
+  background-image: url(/images/header/menu/message.svg);
   margin: 0 16px 16px 0;
 }
 .button__contact {
-  background-image: url(images/header/menu/contact.svg);
+  background-image: url(/images/header/menu/contact.svg);
 }
 .email {
 }
