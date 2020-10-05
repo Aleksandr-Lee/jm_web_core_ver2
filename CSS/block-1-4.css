@@ -57,13 +57,13 @@ body {
   box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02),
     16px 0 52px rgba(14, 24, 80, 0.2);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow: auto;
   position: fixed;
   left: 0;
   top: 0;
   background-color: #ffffff;
-}
-.wrapper__container {
 }
 .header {
 }
@@ -105,7 +105,7 @@ body {
 .button__search {
   background-image: url(../images/header/menu/search.svg);
 }
-.flex {
+.service-contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,8 +113,7 @@ body {
 }
 .section {
 }
-.container {
-}
+
 .menu {
 }
 .menu__items {
@@ -158,8 +157,7 @@ body {
 }
 .footer {
 }
-.container {
-}
+
 .footer__inner {
 }
 .contacts {
@@ -177,6 +175,7 @@ body {
   background-image: url(../images/header/menu/contact.svg);
 }
 .email {
+
 }
 .email__link {
   font-family: "TT Lakes Medium";
