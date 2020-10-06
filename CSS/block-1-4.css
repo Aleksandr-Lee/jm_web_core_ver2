@@ -30,8 +30,6 @@
 }
 
 html {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 *,
@@ -42,18 +40,11 @@ html {
 
 body {
   margin: 0;
-  height: 0;
-  /* height: 100vh;
-  overflow: hidden;*/
 }
-.primer {
-  min-width: 320px;
-  height: 100vh;
-  background-color: brown;
-  /*position: relative;*/
-}
-.wrapper {
-  width: 320px;
+
+.saidbar-menu {
+  max-width: 320px;
+  width: 100%;
   box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02),
     16px 0 52px rgba(14, 24, 80, 0.2);
   height: 100vh;
@@ -65,16 +56,15 @@ body {
   top: 0;
   background-color: #ffffff;
 }
-.header {
-}
 .container {
   padding: 0 24px;
 }
-.header__inner {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 23px;
+  margin-bottom: 32px;
 }
 .button {
   display: block;
@@ -85,6 +75,7 @@ body {
   border-radius: 20px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 .button:hover {
   filter: grayscale(100%);
@@ -93,55 +84,53 @@ body {
 .button__close {
   background-image: url(../images/header/menu/close.svg);
 }
-.logo {
-  margin: 0 60px 0 17px;
-}
-.logo__click {
-}
-.logo__link {
-}
-.logo__image {
-}
 .button__search {
   background-image: url(../images/header/menu/search.svg);
 }
-.service-contacts {
+.button__tel {
+  background-image: url(../images/header/menu/tel.svg);
+  margin: 0 16px 16px 0;
+}
+.button__message {
+  background-image: url(../images/header/menu/message.svg);
+  margin: 0 16px 16px 0;
+}
+.button__contact {
+  background-image: url(../images/header/menu/contact.svg);
+}
+.logo {
+  margin: 0 60px 0 17px;
+}
+
+.navigation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-}
-.section {
-}
-
-.menu {
-}
-.menu__items {
+  min-height: 450px;
+  height: 100%;
 }
 
 .menu__list {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin-top: 18px;
   position: relative;
 }
-.menu__nav {
+.menu__item {
   list-style: none;
-  padding-top: 32px;
   position: relative;
+  margin-bottom: 32px;
+  cursor: pointer;
 }
-.menu__nav:hover::before {
+.menu__item:hover::before {
   content: " ";
   position: absolute;
   height: 32px;
   width: 4px;
   left: -24px;
-  top: 25px;
+  top: -6px;
   border-radius: 10px;
   background: #41f6d7;
-}
-.menu__nav--act {
 }
 .menu__link {
   font-family: "TT Lakes Medium";
@@ -155,27 +144,8 @@ body {
 .menu__link:hover {
   color: #7e7e82;
 }
-.footer {
-}
-
-.footer__inner {
-}
 .contacts {
   display: flex;
-}
-.button__tel {
-  background-image: url(../images/header/menu/tel.svg);
-  margin: 0 16px 16px 0;
-}
-.button__message {
-  background-image: url(../images/header/menu/message.svg);
-  margin: 0 16px 16px 0;
-}
-.button__contact {
-  background-image: url(../images/header/menu/contact.svg);
-}
-.email {
-
 }
 .email__link {
   font-family: "TT Lakes Medium";
@@ -185,9 +155,10 @@ body {
   text-decoration: none;
   white-space: nowrap;
   display: block;
-  margin: 16px 0 12px 0;
+  margin-bottom: 12px;
 }
 .number {
+  margin-bottom: 40px;
 }
 .number__link {
   font-family: "TT Lakes Bold";
@@ -197,18 +168,15 @@ body {
   text-decoration: none;
   white-space: nowrap;
 }
-.language {
-}
+
 .language__list {
   display: flex;
-  margin: 0;
   padding-left: 0;
+  margin: 0;
 }
-.language__menu {
+.language__item {
   list-style: none;
-  padding: 40px 0 32px 0;
-}
-.language__list--act {
+  margin: 0 7px 32px 0;
 }
 .language__link {
   font-family: "TT Lakes Medium";
@@ -217,7 +185,6 @@ body {
   color: #1b1c21;
   text-decoration: none;
   white-space: nowrap;
-  padding-right: 7px;
 }
 .language__link:hover {
   color: #7e7e82;
