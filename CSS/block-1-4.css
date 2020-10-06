@@ -43,7 +43,9 @@ body {
 }
 
 .saidbar-menu {
+  padding: 0 24px;
   max-width: 320px;
+  min-width: 320px;
   width: 100%;
   box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02),
     16px 0 52px rgba(14, 24, 80, 0.2);
@@ -56,9 +58,7 @@ body {
   top: 0;
   background-color: #ffffff;
 }
-.container {
-  padding: 0 24px;
-}
+
 .header {
   display: flex;
   justify-content: space-between;
