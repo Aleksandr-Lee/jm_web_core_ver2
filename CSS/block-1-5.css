@@ -90,11 +90,14 @@ body {
 
 @media (min-width: 768px) {
   .limit-height {
-    max-height: 192px;
-    overflow: hidden;
+     max-height: 192px;
+	 overflow: hidden;
+   /* display: none;*/
   }
-  .check__input:checked + .limit-height {
-    max-height: none;
+}
+@media (min-width: 768px) {
+  .modal__hidden {
+    display: block;
   }
 }
 .swiper-container {
@@ -177,45 +180,35 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #b5b6bc;
 }
-.check {
-  display: none;
+
+.show-more {
+	display: none;
 }
 @media (min-width: 768px) {
-  .check {
-    display: flex;
-    align-items: center;
-  }
+.show-more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.check__btn {
+}
+.button-show {
   height: 24px;
   width: 24px;
   border: none;
-  background: #f2f2f2;
-  background-image: url("../images/section/icon_main.svg");
+  background: #F2F2F2;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  margin: 0 9px 24px 0;
 }
-.check__input {
-  opacity: 0;
+
+.button-show--more {
+  background-image: url(../images/section/icon_main.svg);
+  margin: 0 8px 16px 0;
 }
-.check__box {
-  cursor: pointer;
-  margin-bottom: 24px;
-}
-.check__box::before {
+
+.button-show__text {
   font-family: "TT Lakes Medium";
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
   color: #1b1c21;
-}
-
-.check__input ~ .show-more .check__btn ~ .check__box::before {
-  content: "Показать все";
-}
-
-.check__input:checked ~ .show-more .check__btn ~ .check__box::before {
-  content: "Скрыть";
+  margin: 0 0 16px 0;
+  cursor: pointer;
 }
