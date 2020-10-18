@@ -35,7 +35,6 @@ html {
   min-width: 320px;
   max-width: 1120px;
 }
-
 *,
 *::after,
 *::before {
@@ -46,7 +45,7 @@ body {
   margin: 0;
 }
 .brands {
-  /* padding: 0 16px;*/
+
 }
 .header {
   border-top: 1px solid #d9fff5;
@@ -90,16 +89,11 @@ body {
 
 @media (min-width: 768px) {
   .limit-height {
-     max-height: 192px;
-	 overflow: hidden;
-   /* display: none;*/
+    max-height: 192px;
+    overflow: hidden;
   }
 }
-@media (min-width: 768px) {
-  .modal__hidden {
-    display: block;
-  }
-}
+
 .swiper-container {
   padding-bottom: 25px;
 }
@@ -182,30 +176,33 @@ body {
 }
 
 .show-more {
-	display: none;
+  display: none;
 }
 @media (min-width: 768px) {
-.show-more {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .show-more {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .button-show {
   height: 24px;
   width: 24px;
   border: none;
-  background: #F2F2F2;
+  background: #f2f2f2;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
-.button-show--more {
+.button-show--down {
   background-image: url(../images/section/icon_main.svg);
   margin: 0 8px 16px 0;
 }
-
+.button-show--up {
+  background-image: url(../images/section/up.svg);
+  margin: 0 8px 16px 0;
+}
 .button-show__text {
   font-family: "TT Lakes Medium";
   color: #1b1c21;
